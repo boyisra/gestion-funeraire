@@ -127,7 +127,7 @@ class MFAView:
             height=50,
             gradient=ft.LinearGradient(
                 begin=ft.Alignment(x=-1, y=0), end=ft.Alignment(x=1, y=0),
-                colors=["#8b5cf6", "#ec4899"],
+                Colors=["#8b5cf6", "#ec4899"],
             ),
             border_radius=18,
             on_click=self.verifier_code,
@@ -243,7 +243,7 @@ class MFAView:
                     alignment=ft.Alignment(x=0, y=0),
                     gradient=ft.LinearGradient(
                         begin=ft.Alignment(x=-1, y=-1), end=ft.Alignment(x=1, y=1),
-                        colors=["#f6f3ff", "#fdf2ff", "#fff0f7"],
+                        Colors=["#f6f3ff", "#fdf2ff", "#fff0f7"],
                     ),
                 )
             ],

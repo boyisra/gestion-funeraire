@@ -76,7 +76,7 @@ class MFALinkView:
                     content=carte, expand=True, alignment=ft.Alignment(x=0, y=0),
                     gradient=ft.LinearGradient(
                         begin=ft.Alignment(x=-1, y=-1), end=ft.Alignment(x=1, y=1),
-                        colors=["#f6f3ff", "#fdf2ff", "#fff0f7"],
+                        Colors=["#f6f3ff", "#fdf2ff", "#fff0f7"],
                     ),
                 )
             ],

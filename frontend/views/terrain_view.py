@@ -64,7 +64,7 @@ class TerrainView:
                     width=300, height=300,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#8b5cf6", "#0f0f1a00"]
+                        Colors=["#8b5cf6", "#0f0f1a00"]
                     ),
                     top=-50, right=-50,
                 ),
@@ -72,7 +72,7 @@ class TerrainView:
                     width=250, height=250,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#ec4899", "#0f0f1a00"]
+                        Colors=["#ec4899", "#0f0f1a00"]
                     ),
                     bottom=-60, left=-60,
                 ),
@@ -264,7 +264,7 @@ class TerrainView:
                                 width=200, height=46, bgcolor=ACCENT, border_radius=16,
                                 on_click=self._sauvegarder_config, ink=True,
                                 shadow=ft.BoxShadow(spread_radius=0, blur_radius=12,
-                                                    color=ft.colors.with_opacity(0.3, ACCENT),
+                                                    color=ft.Colors.with_opacity(0.3, ACCENT),
                                                     offset=ft.Offset(0, 6)),
                             ),
                         ],
@@ -335,7 +335,7 @@ class TerrainView:
                             width=160, height=38, bgcolor=ACCENT, border_radius=14,
                             on_click=self._ouvrir_form_zone, ink=True,
                             shadow=ft.BoxShadow(spread_radius=0, blur_radius=8,
-                                                color=ft.colors.with_opacity(0.3, ACCENT),
+                                                color=ft.Colors.with_opacity(0.3, ACCENT),
                                                 offset=ft.Offset(0, 4)),
                         ),
                     ],
@@ -394,7 +394,7 @@ class TerrainView:
             border=ft.Border.all(1, CARD_BORDER),
             height=80,
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=6,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 4)),
         )
 
@@ -579,7 +579,7 @@ class TerrainView:
             padding=ft.Padding(left=20, top=20, right=20, bottom=20),
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=15,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 8)),
         )
 
@@ -608,6 +608,6 @@ class TerrainView:
             border=ft.Border.all(1, CARD_BORDER),
             width=160,
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=10,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 4)),
         )

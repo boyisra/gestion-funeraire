@@ -160,7 +160,7 @@ def build_sidebar(page: ft.Page, active_route: str, notif_count: int = 0) -> ft.
         gradient=ft.LinearGradient(
             begin=ft.Alignment(x=-1, y=-1),
             end=ft.Alignment(x=1, y=1),
-            colors=[SIDEBAR_GRAD_TOP, SIDEBAR_GRAD_BOTTOM],
+            Colors=[SIDEBAR_GRAD_TOP, SIDEBAR_GRAD_BOTTOM],
         ),
     )
 

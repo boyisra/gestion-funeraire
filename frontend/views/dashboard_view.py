@@ -59,7 +59,7 @@ class DashboardView:
                     width=300, height=300,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#8b5cf6", "#0f0f1a00"]
+                        Colors=["#8b5cf6", "#0f0f1a00"]
                     ),
                     top=-50, right=-50,
                 ),
@@ -67,7 +67,7 @@ class DashboardView:
                     width=250, height=250,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#ec4899", "#0f0f1a00"]
+                        Colors=["#ec4899", "#0f0f1a00"]
                     ),
                     bottom=-60, left=-60,
                 ),
@@ -110,7 +110,7 @@ class DashboardView:
                               on_click=lambda e: self._actualiser()),
             ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN),
 
-            ft.Divider(height=16, color=ft.colors.TRANSPARENT),
+            ft.Divider(height=16, color=ft.Colors.TRANSPARENT),
 
             ft.Text("Vue d'ensemble", size=14, color=TEXT_SUB, weight=ft.FontWeight.BOLD),
 
@@ -256,7 +256,7 @@ class DashboardView:
         return ft.BoxShadow(
             spread_radius=0,
             blur_radius=20,
-            color=ft.colors.with_opacity(force, couleur),
+            color=ft.Colors.with_opacity(force, couleur),
             offset=ft.Offset(0, 8),
         )
 
@@ -265,7 +265,7 @@ class DashboardView:
             content=ft.Column(controls=[
                 ft.Container(
                     content=ft.Icon(icon, color=couleur, size=20),
-                    bgcolor=ft.colors.with_opacity(0.15, couleur),
+                    bgcolor=ft.Colors.with_opacity(0.15, couleur),
                     border_radius=12,
                     padding=ft.Padding(left=9, top=9, right=9, bottom=9),
                 ),

@@ -61,7 +61,7 @@ class RapportView:
                     width=300, height=300,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#8b5cf6", "#0f0f1a00"]
+                        Colors=["#8b5cf6", "#0f0f1a00"]
                     ),
                     top=-50, right=-50,
                 ),
@@ -69,7 +69,7 @@ class RapportView:
                     width=250, height=250,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#ec4899", "#0f0f1a00"]
+                        Colors=["#ec4899", "#0f0f1a00"]
                     ),
                     bottom=-60, left=-60,
                 ),
@@ -391,7 +391,7 @@ class RapportView:
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(
                 spread_radius=0, blur_radius=15,
-                color=ft.colors.with_opacity(0.1, "#000000"),
+                color=ft.Colors.with_opacity(0.1, "#000000"),
                 offset=ft.Offset(0, 8),
             ),
             padding=ft.Padding(left=20, top=18, right=20, bottom=18),
@@ -406,7 +406,7 @@ class RapportView:
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(
                 spread_radius=0, blur_radius=15,
-                color=ft.colors.with_opacity(0.1, "#000000"),
+                color=ft.Colors.with_opacity(0.1, "#000000"),
                 offset=ft.Offset(0, 8),
             ),
             padding=ft.Padding(left=20, top=20, right=20, bottom=20),
@@ -433,7 +433,7 @@ class RapportView:
             border=ft.Border.all(1, couleur),
             shadow=ft.BoxShadow(
                 spread_radius=0, blur_radius=10,
-                color=ft.colors.with_opacity(0.2, couleur),
+                color=ft.Colors.with_opacity(0.2, couleur),
                 offset=ft.Offset(0, 6),
             ),
             padding=ft.Padding(left=16, top=16, right=16, bottom=16),

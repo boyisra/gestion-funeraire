@@ -31,7 +31,7 @@ class LoginView:
         # --- Logo / marque ---
         logo = ft.Container(
             content=ft.Text("⚰", size=32),
-            bgcolor=ft.colors.with_opacity(0.1, "#ffffff"),
+            bgcolor=ft.Colors.with_opacity(0.1, "#ffffff"),
             border_radius=16,
             padding=ft.padding.all(12),
         )
@@ -112,7 +112,7 @@ class LoginView:
             gradient=ft.LinearGradient(
                 begin=ft.alignment.center_left,
                 end=ft.alignment.center_right,
-                colors=["#8b5cf6", "#ec4899"],
+                Colors=["#8b5cf6", "#ec4899"],
             ),
             border_radius=14,
             on_click=self.se_connecter,
@@ -120,7 +120,7 @@ class LoginView:
             shadow=ft.BoxShadow(
                 spread_radius=0,
                 blur_radius=20,
-                color=ft.colors.with_opacity(0.3, "#8b5cf6"),
+                color=ft.Colors.with_opacity(0.3, "#8b5cf6"),
                 offset=ft.Offset(0, 8),
             ),
         )
@@ -130,11 +130,11 @@ class LoginView:
             controls=[
                 ft.TextButton(
                     "Mot de passe oublié ?",
-                    style=ft.ButtonStyle(color=TEXT_SUB, overlay_color=ft.colors.TRANSPARENT),
+                    style=ft.ButtonStyle(color=TEXT_SUB, overlay_color=ft.Colors.TRANSPARENT),
                 ),
                 ft.TextButton(
                     "Créer un compte",
-                    style=ft.ButtonStyle(color=ACCENT, overlay_color=ft.colors.TRANSPARENT),
+                    style=ft.ButtonStyle(color=ACCENT, overlay_color=ft.Colors.TRANSPARENT),
                 ),
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
@@ -147,13 +147,13 @@ class LoginView:
                     logo,
                     titre,
                     sous_titre,
-                    ft.Divider(height=24, color=ft.colors.TRANSPARENT),
+                    ft.Divider(height=24, color=ft.Colors.TRANSPARENT),
                     self.champ_email,
                     self.champ_password,
                     self.message_erreur,
-                    ft.Divider(height=8, color=ft.colors.TRANSPARENT),
+                    ft.Divider(height=8, color=ft.Colors.TRANSPARENT),
                     ft.Row(controls=[self.btn_connexion], alignment=ft.MainAxisAlignment.CENTER),
-                    ft.Divider(height=16, color=ft.colors.TRANSPARENT),
+                    ft.Divider(height=16, color=ft.Colors.TRANSPARENT),
                     liens,
                 ],
                 spacing=14,
@@ -167,7 +167,7 @@ class LoginView:
             shadow=ft.BoxShadow(
                 spread_radius=0,
                 blur_radius=40,
-                color=ft.colors.with_opacity(0.15, "#000000"),
+                color=ft.Colors.with_opacity(0.15, "#000000"),
                 offset=ft.Offset(0, 20),
             ),
         )
@@ -183,7 +183,7 @@ class LoginView:
                         gradient=ft.RadialGradient(
                             center=ft.alignment.center,
                             radius=1.0,
-                            colors=["#8b5cf6", "#1a1a2e00"],
+                            Colors=["#8b5cf6", "#1a1a2e00"],
                         ),
                         top=-50,
                         right=-50,
@@ -195,7 +195,7 @@ class LoginView:
                         gradient=ft.RadialGradient(
                             center=ft.alignment.center,
                             radius=1.0,
-                            colors=["#ec4899", "#1a1a2e00"],
+                            Colors=["#ec4899", "#1a1a2e00"],
                         ),
                         bottom=-60,
                         left=-60,
@@ -206,7 +206,7 @@ class LoginView:
             gradient=ft.LinearGradient(
                 begin=ft.alignment.top_center,
                 end=ft.alignment.bottom_center,
-                colors=["#0a0a14", "#0f0f1a", "#0a0a14"],
+                Colors=["#0a0a14", "#0f0f1a", "#0a0a14"],
             ),
         )
 

@@ -75,7 +75,7 @@ class ReservationView:
                     width=300, height=300,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#8b5cf6", "#0f0f1a00"]
+                        Colors=["#8b5cf6", "#0f0f1a00"]
                     ),
                     top=-50, right=-50,
                 ),
@@ -83,7 +83,7 @@ class ReservationView:
                     width=250, height=250,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#ec4899", "#0f0f1a00"]
+                        Colors=["#ec4899", "#0f0f1a00"]
                     ),
                     bottom=-60, left=-60,
                 ),
@@ -266,7 +266,7 @@ class ReservationView:
             border_radius=14,
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=10,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 4)),
             padding=ft.Padding(left=0, top=12, right=16, bottom=12),
         )
@@ -401,7 +401,7 @@ class ReservationView:
                             width=280, height=48, bgcolor=ACCENT, border_radius=18,
                             on_click=self._soumettre, ink=True,
                             shadow=ft.BoxShadow(spread_radius=0, blur_radius=12,
-                                                color=ft.colors.with_opacity(0.3, ACCENT),
+                                                color=ft.Colors.with_opacity(0.3, ACCENT),
                                                 offset=ft.Offset(0, 6)),
                         ),
                     ],
@@ -491,7 +491,7 @@ class ReservationView:
             padding=ft.Padding(left=20, top=20, right=20, bottom=20),
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=15,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 8)),
         )
 

@@ -87,7 +87,7 @@ class ConcessionView:
                     width=300, height=300,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#8b5cf6", "#0f0f1a00"]
+                        Colors=["#8b5cf6", "#0f0f1a00"]
                     ),
                     top=-50, right=-50,
                 ),
@@ -95,7 +95,7 @@ class ConcessionView:
                     width=250, height=250,
                     gradient=ft.RadialGradient(
                         center=ft.alignment.center, radius=1.0,
-                        colors=["#ec4899", "#0f0f1a00"]
+                        Colors=["#ec4899", "#0f0f1a00"]
                     ),
                     bottom=-60, left=-60,
                 ),
@@ -300,7 +300,7 @@ class ConcessionView:
             border=ft.Border.all(1, CARD_BORDER),
             padding=ft.Padding(left=0, top=12, right=16, bottom=12),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=10,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 4)),
         )
 
@@ -321,7 +321,7 @@ class ConcessionView:
                     on_click=lambda e: self._ouvrir_demande_exhumation(None),
                     ink=True,
                     shadow=ft.BoxShadow(spread_radius=0, blur_radius=8,
-                                        color=ft.colors.with_opacity(0.3, PURPLE),
+                                        color=ft.Colors.with_opacity(0.3, PURPLE),
                                         offset=ft.Offset(0, 4)),
                 ),
             ],
@@ -405,7 +405,7 @@ class ConcessionView:
             border=ft.Border.all(1, CARD_BORDER),
             padding=ft.Padding(left=0, top=12, right=16, bottom=12),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=10,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 4)),
         )
 
@@ -462,7 +462,7 @@ class ConcessionView:
                             width=240, height=48, bgcolor=ACCENT, border_radius=14,
                             on_click=self._creer_concession, ink=True,
                             shadow=ft.BoxShadow(spread_radius=0, blur_radius=12,
-                                                color=ft.colors.with_opacity(0.3, ACCENT),
+                                                color=ft.Colors.with_opacity(0.3, ACCENT),
                                                 offset=ft.Offset(0, 6)),
                         ),
                     ],
@@ -648,7 +648,7 @@ class ConcessionView:
             padding=ft.Padding(left=20, top=20, right=20, bottom=20),
             border=ft.Border.all(1, CARD_BORDER),
             shadow=ft.BoxShadow(spread_radius=0, blur_radius=15,
-                                color=ft.colors.with_opacity(0.1, "#000000"),
+                                color=ft.Colors.with_opacity(0.1, "#000000"),
                                 offset=ft.Offset(0, 8)),
         )
 
