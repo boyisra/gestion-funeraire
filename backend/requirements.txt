@@ -1,0 +1,47 @@
+# === FRAMEWORK PRINCIPAL ===
+django==4.2.16
+django-ninja==1.3.0
+
+# === BASE DE DONNÉES ===
+psycopg2-binary==2.9.9
+django-environ==0.11.2
+
+# === AUTHENTIFICATION & SÉCURITÉ ===
+djangorestframework-simplejwt==5.3.1
+pyotp==2.9.0
+cryptography==42.0.8
+
+# === EMAIL (MFA + notifications) ===
+django-anymail[mailgun]==10.3
+
+# === GÉNÉRATION PDF ===
+fpdf2==2.7.9
+reportlab==4.2.2
+
+# === PAIEMENTS MOBILE MONEY ===
+requests==2.32.3
+
+# === CARTOGRAPHIE / GIS ===
+django-leaflet==0.30.0
+geopy==2.4.1
+
+# === TÂCHES ASYNCHRONES (alertes, emails) ===
+celery==5.4.0
+redis==5.0.8
+django-celery-beat==2.6.0
+
+# === EXPORTS ===
+openpyxl==3.1.5
+pandas==2.2.2
+
+# === UTILITAIRES ===
+Pillow==10.4.0
+python-dotenv==1.0.1
+django-cors-headers==4.4.0
+whitenoise==6.7.0
+
+# === DOCUMENTATION API ===
+# Django Ninja inclut OpenAPI/Swagger automatiquement
+
+# === DÉVELOPPEMENT ===
+django-debug-toolbar==4.4.6
