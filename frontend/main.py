@@ -4,6 +4,7 @@ Gestion de Cimetière — Compatible Flet 0.85+
 """
 import flet as ft
 import sys, os
+from views.login_view import LoginView
 
 sys.path.insert(0, os.path.dirname(__file__))
 from utils.config import session
