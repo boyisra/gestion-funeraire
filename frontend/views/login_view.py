@@ -43,11 +43,10 @@ class LoginView:
             color=TEXT_SUB,
         )
 
-        # --- Champs ---
+        # --- Champs (sans icônes) ---
         self.champ_email = ft.TextField(
             label="Adresse email",
             label_style=ft.TextStyle(color=TEXT_SUB, size=12),
-            prefix_icon=ft.icons.EMAIL_OUTLINED,
             keyboard_type=ft.KeyboardType.EMAIL,
             autofocus=True,
             border_radius=12,
@@ -62,7 +61,6 @@ class LoginView:
         self.champ_password = ft.TextField(
             label="Mot de passe",
             label_style=ft.TextStyle(color=TEXT_SUB, size=12),
-            prefix_icon=ft.icons.LOCK_OUTLINED,
             password=True,
             can_reveal_password=True,
             border_radius=12,
@@ -74,15 +72,9 @@ class LoginView:
             on_submit=lambda e: self.se_connecter(e),
         )
 
-        # --- Message d'erreur ---
+        # --- Message d'erreur (sans icône) ---
         self.message_erreur = ft.Container(
-            content=ft.Row(
-                controls=[
-                    ft.Icon(ft.icons.ERROR_OUTLINE, color=ERROR_COLOR, size=16),
-                    ft.Text("", color=ERROR_COLOR, size=13),
-                ],
-                spacing=8,
-            ),
+            content=ft.Text("", color=ERROR_COLOR, size=13),
             visible=False,
             bgcolor="#2d1b1b",
             border_radius=12,
@@ -90,7 +82,7 @@ class LoginView:
             border=ft.border.all(1, "#3b2020"),
         )
 
-        # --- Bouton de connexion ---
+        # --- Bouton de connexion (sans icône) ---
         self.label_btn = ft.Text(
             "Se connecter",
             color="#ffffff",
@@ -101,11 +93,9 @@ class LoginView:
         self.btn_connexion = ft.Container(
             content=ft.Row(
                 controls=[
-                    ft.Icon(ft.icons.LOGIN, color="#ffffff", size=18),
                     self.label_btn,
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
-                spacing=8,
             ),
             width=320,
             height=48,
@@ -267,7 +257,7 @@ class LoginView:
             self._set_chargement(False)
 
     def _afficher_erreur(self, message: str):
-        self.message_erreur.content.controls[1].value = message
+        self.message_erreur.content = ft.Text(message, color=ERROR_COLOR, size=13)
         self.message_erreur.visible = True
         self.page.update()
 
