@@ -33,7 +33,7 @@ class LoginView:
             content=ft.Text("⚰", size=32),
             bgcolor=ft.Colors.with_opacity(0.1, "#ffffff"),
             border_radius=16,
-            padding=ft.padding.all(12),
+            padding=12,
         )
 
         titre = ft.Text("Connexion", size=26, weight=ft.FontWeight.BOLD, color=TEXT_MAIN)
